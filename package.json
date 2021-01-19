@@ -9,7 +9,7 @@
     "vscode": "^1.52.0"
   },
   "scripts": {
-    "update-grammar": "node ../../build/npm/update-grammar.js atom/language-clojure grammars/clojure.cson ./syntaxes/clojure.tmLanguage.json"
+    "update-grammar": "vscode-grammar-updater atom/language-clojure grammars/clojure.cson ./syntaxes/clojure.tmLanguage.json"
   },
   "contributes": {
     "languages": [
@@ -45,5 +45,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/microsoft/vscode-clojure.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vscode-grammar-updater": "^1.0.2"
   }
 }
